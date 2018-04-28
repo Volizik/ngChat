@@ -1,0 +1,15 @@
+<div class="wrap">
+  <div class="app">
+    <h1>{{ title }}</h1>
+    <main class="main">
+      <ul class="message-list">
+        <li *ngFor="let item of dataFromSocket">{{ item }}</li>
+      </ul>
+      <div class="message-area">
+        <textarea [(ngModel)]="input"></textarea>
+        <button (click)="sendMessage()" [disabled]="input.length === 0">Send</button>
+      </div>
+
+    </main>
+  </div>
+</div>

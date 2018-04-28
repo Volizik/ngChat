@@ -1,0 +1,56 @@
+.wrap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+.app {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 0;
+  top: 0;
+  margin: 0 auto;
+  padding: 10px;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 600px;
+  height: 100vh;
+  min-height: 400px;
+  background-color: #fff;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.message-list {
+  margin: 0;
+  padding: 10px;
+  box-sizing: border-box;
+  overflow-y: scroll;
+  width: 100%;
+  flex-grow: 1;
+  li {
+    background-color: #ccc;
+    margin: 10px;
+    list-style: none;
+    padding: 10px;
+    font-size: 18px;
+  }
+}
+.message-area {
+  height: 60px;
+  display: flex;
+  textarea {
+    padding: 0;
+    height: 100%;
+    flex-grow: 1;
+    //border: none;
+    resize: none;
+    box-sizing: border-box;
+  }
+  button {
+    width: 100px;
+    height: 100%;
+  }
+}
